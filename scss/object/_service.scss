@@ -1,0 +1,55 @@
+.service {
+  background-color: cl(green);
+  padding-bottom: 40px;
+  &__container {
+    text-align: center;
+    @include overTab {
+    }
+    @include overPC {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+}
+
+.service-image {
+  @include overTab {
+    text-align: center;
+  }
+  @include overPC {
+    margin-left: 200px;
+  }
+  & img {
+    width: 640px;
+    border-radius: 30px;
+  }
+}
+
+.service-info {
+  margin-top: 30px;
+}
+
+.service-list {
+  font-size: 2rem;
+}
+
+.service-item {
+  margin-bottom: 20px;
+  @include overTab {
+  }
+  @include overPC {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+}
+
+.service-caution {
+  font-size: 1.3rem;
+  padding-top: 30px;
+}
+
+.service-btn {
+  margin-top: 20px;
+}

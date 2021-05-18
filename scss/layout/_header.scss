@@ -1,0 +1,48 @@
+.header {
+  background-color: cl(sky);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @include overTab {
+    }
+    @include overPC {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.header-logo {
+  @include overTab {
+  }
+  @include overPC {
+    padding-left: 30px;
+  }
+  & img {
+    width: 120px;
+    height: 94px;
+  }
+}
+
+.header-nav {
+  &__list {
+    display: none;
+    @include overTab {
+    }
+    @include overPC {
+      display: flex;
+    }
+  }
+  &__link {
+    margin-right: 30px;
+    font-size: 1.125rem;
+    & a:hover {
+      opacity: 0.6;
+    }
+  }
+}

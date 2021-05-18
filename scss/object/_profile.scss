@@ -1,0 +1,57 @@
+.profile {
+  background-color: cl(blue);
+  padding-bottom: 40px;
+  &__container {
+    @include overTab {
+    }
+    @include overPC {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.profile-image {
+  @include overTab {
+    text-align: center;
+  }
+  @include overPC {
+    margin-right: 70px;
+  }
+  & img {
+    width: 640px;
+    border-radius: 30px;
+  }
+}
+
+.profile-text {
+  margin-top: 30px;
+  @include overTab {
+  }
+  @include overPC {
+  }
+  &__title {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+    text-align: center;
+    @include overTab {
+    }
+    @include overPC {
+      font-size: 1.5rem;
+      padding-bottom: 50px;
+      text-align: left;
+    }
+  }
+  &__info {
+    font-size: 1.125rem;
+    line-height: 2;
+    text-align: center;
+    @include overTab {
+    }
+    @include overPC {
+      font-size: 1.125rem;
+      line-height: 2;
+      text-align: left;
+    }
+  }
+}

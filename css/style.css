@@ -1,0 +1,493 @@
+body {
+  font-family: serif;
+  line-height: 1.5;
+  color: #ffffe0;
+  background-image: url(/img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  -webkit-filter: sepia(10%);
+          filter: sepia(10%);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.header {
+  background-color: #6495ed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media print, screen and (min-width: 1025px) {
+  .header-logo {
+    padding-left: 30px;
+  }
+}
+
+.header-logo img {
+  width: 120px;
+  height: 94px;
+}
+
+.header-nav__list {
+  display: none;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .header-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-nav__link {
+  margin-right: 30px;
+  font-size: 1.125rem;
+}
+
+.header-nav__link a:hover {
+  opacity: 0.6;
+}
+
+.ham {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .ham {
+    display: none;
+  }
+}
+
+.ham__line {
+  position: absolute;
+  left: 10px;
+  width: 70px;
+  height: 3px;
+  background-color: #000033;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ham__line--1 {
+  top: 30px;
+}
+
+.ham__line--2 {
+  top: 45px;
+}
+
+.ham__line--3 {
+  top: 60px;
+}
+
+.clicked .ham__line--1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 40px;
+}
+
+.clicked .ham__line--2 {
+  width: 0px;
+}
+
+.clicked .ham__line--3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 40px;
+}
+
+.hamMenu {
+  background-color: #000033;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: fixed;
+  width: 100%;
+  top: -400px;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .hamMenu {
+    display: none;
+  }
+}
+
+.hamMenu__link a {
+  color: #ffffe0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.clicked.hamMenu {
+  top: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn a {
+  display: inline-block;
+  color: #000033;
+  font-family: "Yu Gothic";
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 4px #ffffe0;
+          box-shadow: 2px 2px 4px #ffffe0;
+  background-color: #ffffe0;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact__sns a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 30px;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact__sns a:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.fa-envelope {
+  color: #ffffe0;
+}
+
+.fa-twitter {
+  color: #ffffe0;
+}
+
+.footer {
+  background-color: #6495ed;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: 170px;
+}
+
+.top {
+  background-image: url(/img/mv-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin-top: 94px;
+  -webkit-filter: sepia(35%);
+          filter: sepia(35%);
+  color: #ffffe0;
+  margin-bottom: 50px;
+}
+
+.top__text--1 {
+  font-size: 1.8rem;
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 600px) {
+  .top__text--1 {
+    font-size: 2.7rem;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+}
+
+@media print, screen and (min-width: 1025px) {
+  .top__text--1 {
+    font-size: 3.125rem;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+}
+
+.top__text--2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 3em;
+}
+
+@media print, screen and (min-width: 600px) {
+  .top__text--2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 7em;
+  }
+}
+
+@media print, screen and (min-width: 1025px) {
+  .top__text--2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 7em;
+  }
+}
+
+.profile {
+  background-color: #333399;
+  padding-bottom: 40px;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .profile__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media print, screen and (min-width: 600px) {
+  .profile-image {
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 1025px) {
+  .profile-image {
+    margin-right: 70px;
+  }
+}
+
+.profile-image img {
+  width: 640px;
+  border-radius: 30px;
+}
+
+.profile-text {
+  margin-top: 30px;
+}
+
+.profile-text__title {
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .profile-text__title {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+}
+
+.profile-text__info {
+  font-size: 1.125rem;
+  line-height: 2;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .profile-text__info {
+    font-size: 1.125rem;
+    line-height: 2;
+    text-align: left;
+  }
+}
+
+.service {
+  background-color: #4682b4;
+  padding-bottom: 40px;
+}
+
+.service__container {
+  text-align: center;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .service__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media print, screen and (min-width: 600px) {
+  .service-image {
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 1025px) {
+  .service-image {
+    margin-left: 200px;
+  }
+}
+
+.service-image img {
+  width: 640px;
+  border-radius: 30px;
+}
+
+.service-info {
+  margin-top: 30px;
+}
+
+.service-list {
+  font-size: 2rem;
+}
+
+.service-item {
+  margin-bottom: 20px;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .service-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.service-caution {
+  font-size: 1.3rem;
+  padding-top: 30px;
+}
+
+.service-btn {
+  margin-top: 20px;
+}
+
+.works {
+  background-color: #333399;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.works-list {
+  text-align: center;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .works-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+  }
+}
+
+.works-list__item {
+  margin-bottom: 30px;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .works-list__item {
+    margin-bottom: 0;
+  }
+}
+
+.works-list__item img {
+  width: 500px;
+  height: 270px;
+}
+
+.works-list__item a:hover {
+  opacity: 0.6;
+}
+
+.contact {
+  background-color: #660000;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.contact__text {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+@media print, screen and (min-width: 1025px) {
+  .contact__text {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+}
+
+.contact__caution {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

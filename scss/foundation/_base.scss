@@ -1,0 +1,25 @@
+$colors: (
+  blue: #333399,
+  white: #fff,
+  black: #000033,
+  cream: #ffffe0,
+  red: #660000,
+  sky: #6495ed,
+  green: #4682b4,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}
+
+@mixin overTab {
+  @media print, screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin overPC {
+  @media print, screen and (min-width: 1025px) {
+    @content;
+  }
+}

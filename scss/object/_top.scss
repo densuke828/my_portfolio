@@ -1,0 +1,41 @@
+.top {
+  background-image: url(../img/mv-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin-top: 94px;
+  filter: sepia(35%);
+  color: cl(cream);
+  margin-bottom: 50px;
+  &__text--1 {
+    font-size: 1.8rem;
+    padding-top: 15px;
+    text-align: center;
+
+    @include overTab {
+      font-size: 2.7rem;
+      padding-left: 40px;
+      padding-top: 30px;
+    }
+    @include overPC {
+      font-size: 3.125rem;
+      padding-left: 40px;
+      padding-top: 30px;
+    }
+  }
+  &__text--2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3em;
+    @include overTab {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 7em;
+    }
+    @include overPC {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 7em;
+    }
+  }
+}

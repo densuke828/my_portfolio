@@ -1,0 +1,32 @@
+.works {
+  background-color: cl(blue);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.works-list {
+  text-align: center;
+  @include overTab {
+  }
+  @include overPC {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    @include overTab {
+    }
+    @include overPC {
+      margin-bottom: 0;
+    }
+    & img {
+      width: 500px;
+      height: 270px;
+    }
+    & a:hover {
+      opacity: 0.6;
+    }
+  }
+}

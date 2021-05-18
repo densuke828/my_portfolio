@@ -1,0 +1,67 @@
+.ham {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+  @include overTab {
+  }
+  @include overPC {
+    display: none;
+  }
+}
+
+.ham__line {
+  position: absolute;
+  left: 10px;
+  width: 70px;
+  height: 3px;
+  background-color: cl(black);
+  transition: all 0.3s;
+  &--1 {
+    top: 30px;
+  }
+  &--2 {
+    top: 45px;
+  }
+  &--3 {
+    top: 60px;
+  }
+}
+
+.clicked .ham__line--1 {
+  transform: rotate(45deg);
+  top: 40px;
+}
+.clicked .ham__line--2 {
+  width: 0px;
+}
+.clicked .ham__line--3 {
+  transform: rotate(-45deg);
+  top: 40px;
+}
+
+.hamMenu {
+  background-color: cl(black);
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.9;
+  transition: all 0.3s;
+  position: fixed;
+  width: 100%;
+  top: -400px;
+  @include overTab {
+  }
+  @include overPC {
+    display: none;
+  }
+  &__link a {
+    color: cl(cream);
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.clicked.hamMenu {
+  top: 0;
+}

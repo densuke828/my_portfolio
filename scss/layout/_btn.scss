@@ -1,0 +1,17 @@
+.btn {
+  text-align: center;
+  & a {
+    display: inline-block;
+    color: cl(black);
+    font-family: "Yu Gothic";
+    font-weight: bold;
+    box-shadow: 2px 2px 4px cl(cream);
+    background-color: cl(cream);
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
