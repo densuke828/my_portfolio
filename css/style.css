@@ -2,7 +2,7 @@ body {
   font-family: serif;
   line-height: 1.5;
   color: #ffffe0;
-  background-image: url(../img/background.jpg);
+  background-image: url(https://densuke828.github.io/my_portfolio/img/background.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -230,7 +230,7 @@ img {
 }
 
 .top {
-  background-image: url(../img/mv-3.jpg);
+  background-image: url(https://densuke828.github.io/my_portfolio/img/mv-3.jpg);
   background-position: center;
   background-size: cover;
   height: 800px;
